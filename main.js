@@ -63,6 +63,8 @@ const findInvalidCards = nestedArray  => {
     return invalidCards;
 }
 
+//Test Function
+
 console.log(findInvalidCards(batch));
 
 // ID INVALID CARD COMPANIES
@@ -86,6 +88,8 @@ const idInvalidCardCompanies = invalidCardsArr => {
 
 }
 
-console.log(idInvalidCardCompanies(invalidCards));
-console.log(idInvalidCardCompanies([invalid1]))
-console.log(idInvalidCardCompanies([invalid2]))
+//Test Functions
+
+console.log(idInvalidCardCompanies(invalidCards)); // Should return ['Visa', 'Mastercard', 'Amex', 'Discover']
+console.log(idInvalidCardCompanies([invalid1])); // Should return ['Visa']
+console.log(idInvalidCardCompanies([invalid2])) // Should return ['Mastercard']
